@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/absorb_pointer.dart';
+import 'package:learn_flutter_widget/animated_align.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -26,6 +27,17 @@ class HomePage extends StatelessWidget {
                       );
                     },
                     child: const Text('Absorb pointer'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => AnimatedAlignExample(),
+                        ),
+                      );
+                    },
+                    child: const Text('Animated align'),
                   ),
                 ],
               ),
