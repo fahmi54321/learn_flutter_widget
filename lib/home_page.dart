@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/absorb_pointer.dart';
 import 'package:learn_flutter_widget/animated_align.dart';
 import 'package:learn_flutter_widget/animated_builder.dart';
+import 'package:learn_flutter_widget/animated_container.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -50,6 +51,17 @@ class HomePage extends StatelessWidget {
                       );
                     },
                     child: const Text('Animated builder'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => AnimatedContainerExample(),
+                        ),
+                      );
+                    },
+                    child: const Text('Animated container'),
                   ),
                 ],
               ),
