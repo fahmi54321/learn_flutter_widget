@@ -5,6 +5,7 @@ import 'package:learn_flutter_widget/animated_builder.dart';
 import 'package:learn_flutter_widget/animated_container.dart';
 import 'package:learn_flutter_widget/animated_cross_fade.dart';
 import 'package:learn_flutter_widget/app_bar_example.dart';
+import 'package:learn_flutter_widget/aspect_ratio_example.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -86,6 +87,17 @@ class HomePage extends StatelessWidget {
                       );
                     },
                     child: const Text('Appbar'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => AspectRatioExample(),
+                        ),
+                      );
+                    },
+                    child: const Text('Aspect ratio'),
                   ),
                 ],
               ),
