@@ -3,6 +3,7 @@ import 'package:learn_flutter_widget/absorb_pointer.dart';
 import 'package:learn_flutter_widget/animated_align.dart';
 import 'package:learn_flutter_widget/animated_builder.dart';
 import 'package:learn_flutter_widget/animated_container.dart';
+import 'package:learn_flutter_widget/animated_cross_fade.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -62,6 +63,17 @@ class HomePage extends StatelessWidget {
                       );
                     },
                     child: const Text('Animated container'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => AnimatedCrossFadeExample(),
+                        ),
+                      );
+                    },
+                    child: const Text('Animated cross fade'),
                   ),
                 ],
               ),
