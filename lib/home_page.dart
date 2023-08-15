@@ -14,6 +14,7 @@ import 'package:learn_flutter_widget/app_bar_example.dart';
 import 'package:learn_flutter_widget/aspect_ratio_example.dart';
 import 'package:learn_flutter_widget/autocomplete_example.dart';
 import 'package:learn_flutter_widget/backdropfilter_example.dart';
+import 'package:learn_flutter_widget/cupertino_picker_example.dart';
 import 'package:learn_flutter_widget/physical_model.dart';
 
 class HomePage extends StatelessWidget {
@@ -206,6 +207,17 @@ class HomePage extends StatelessWidget {
                       );
                     },
                     child: const Text('Backdropfilter'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => CupertinoPickerExample(),
+                        ),
+                      );
+                    },
+                    child: const Text('Cupertino picker'),
                   ),
                 ],
               ),
