@@ -5,6 +5,7 @@ import 'package:learn_flutter_widget/animated_builder.dart';
 import 'package:learn_flutter_widget/animated_container.dart';
 import 'package:learn_flutter_widget/animated_cross_fade.dart';
 import 'package:learn_flutter_widget/animated_list.dart';
+import 'package:learn_flutter_widget/animated_opacity.dart';
 import 'package:learn_flutter_widget/animated_text.dart';
 import 'package:learn_flutter_widget/app_bar_example.dart';
 import 'package:learn_flutter_widget/aspect_ratio_example.dart';
@@ -100,6 +101,17 @@ class HomePage extends StatelessWidget {
                       );
                     },
                     child: const Text('Animated list'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => LogoFade(),
+                        ),
+                      );
+                    },
+                    child: const Text('Animated opacity'),
                   ),
                   ElevatedButton(
                     onPressed: () {
