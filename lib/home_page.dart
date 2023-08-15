@@ -7,6 +7,7 @@ import 'package:learn_flutter_widget/animated_cross_fade.dart';
 import 'package:learn_flutter_widget/animated_list.dart';
 import 'package:learn_flutter_widget/animated_opacity.dart';
 import 'package:learn_flutter_widget/animated_positioned_example.dart';
+import 'package:learn_flutter_widget/animated_size_example.dart';
 import 'package:learn_flutter_widget/animated_text.dart';
 import 'package:learn_flutter_widget/app_bar_example.dart';
 import 'package:learn_flutter_widget/aspect_ratio_example.dart';
@@ -136,6 +137,17 @@ class HomePage extends StatelessWidget {
                       );
                     },
                     child: const Text('Animated Posiotioned'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => AnimatedSizeExample(),
+                        ),
+                      );
+                    },
+                    child: const Text('Animated Size'),
                   ),
                   ElevatedButton(
                     onPressed: () {
