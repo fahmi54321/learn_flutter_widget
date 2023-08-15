@@ -9,6 +9,7 @@ import 'package:learn_flutter_widget/animated_opacity.dart';
 import 'package:learn_flutter_widget/animated_text.dart';
 import 'package:learn_flutter_widget/app_bar_example.dart';
 import 'package:learn_flutter_widget/aspect_ratio_example.dart';
+import 'package:learn_flutter_widget/physical_model.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -112,6 +113,17 @@ class HomePage extends StatelessWidget {
                       );
                     },
                     child: const Text('Animated opacity'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => PhysicalModelExample(),
+                        ),
+                      );
+                    },
+                    child: const Text('Physical Model'),
                   ),
                   ElevatedButton(
                     onPressed: () {
