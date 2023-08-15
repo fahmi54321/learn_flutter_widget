@@ -16,6 +16,7 @@ import 'package:learn_flutter_widget/autocomplete_example.dart';
 import 'package:learn_flutter_widget/backdropfilter_example.dart';
 import 'package:learn_flutter_widget/cupertino_picker_example.dart';
 import 'package:learn_flutter_widget/cupertino_segmented_control_example.dart';
+import 'package:learn_flutter_widget/cupertino_sliver_navigation_bar_example.dart';
 import 'package:learn_flutter_widget/physical_model.dart';
 
 class HomePage extends StatelessWidget {
@@ -230,6 +231,17 @@ class HomePage extends StatelessWidget {
                       );
                     },
                     child: const Text('Cupertino segmented control'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => SliverNavBarExample(),
+                        ),
+                      );
+                    },
+                    child: const Text('Cupertino sliver navigation bar'),
                   ),
                 ],
               ),
