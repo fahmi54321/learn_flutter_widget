@@ -9,6 +9,7 @@ import 'package:learn_flutter_widget/animated_opacity.dart';
 import 'package:learn_flutter_widget/animated_positioned_example.dart';
 import 'package:learn_flutter_widget/animated_size_example.dart';
 import 'package:learn_flutter_widget/animated_text.dart';
+import 'package:learn_flutter_widget/animated_widget_example.dart';
 import 'package:learn_flutter_widget/app_bar_example.dart';
 import 'package:learn_flutter_widget/aspect_ratio_example.dart';
 import 'package:learn_flutter_widget/physical_model.dart';
@@ -148,6 +149,17 @@ class HomePage extends StatelessWidget {
                       );
                     },
                     child: const Text('Animated Size'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => AnimatedWidgetExample(),
+                        ),
+                      );
+                    },
+                    child: const Text('Animated Widget'),
                   ),
                   ElevatedButton(
                     onPressed: () {
