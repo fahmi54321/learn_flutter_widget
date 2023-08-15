@@ -18,6 +18,7 @@ import 'package:learn_flutter_widget/cupertino_picker_example.dart';
 import 'package:learn_flutter_widget/cupertino_segmented_control_example.dart';
 import 'package:learn_flutter_widget/cupertino_sliver_navigation_bar_example.dart';
 import 'package:learn_flutter_widget/data_table_example.dart';
+import 'package:learn_flutter_widget/decorateBox_transation_example.dart';
 import 'package:learn_flutter_widget/physical_model.dart';
 
 class HomePage extends StatelessWidget {
@@ -254,6 +255,17 @@ class HomePage extends StatelessWidget {
                       );
                     },
                     child: const Text('Data table'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => DecoratedBoxTransitionExample(),
+                        ),
+                      );
+                    },
+                    child: const Text('Decorated box transition'),
                   ),
                 ],
               ),
