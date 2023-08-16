@@ -27,6 +27,7 @@ import 'package:learn_flutter_widget/fractionally_sizedbox_example.dart';
 import 'package:learn_flutter_widget/indexed_stack_example.dart';
 import 'package:learn_flutter_widget/intrinsic_height_width_example.dart';
 import 'package:learn_flutter_widget/limited_box_example.dart';
+import 'package:learn_flutter_widget/notification_scroll_listener_example.dart';
 import 'package:learn_flutter_widget/physical_model.dart';
 import 'package:learn_flutter_widget/transform_example.dart';
 
@@ -374,6 +375,17 @@ class HomePage extends StatelessWidget {
                   );
                 },
                 child: const Text('Limited Box'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => NotificationScrollListenerExample(),
+                    ),
+                  );
+                },
+                child: const Text('Notification scroll listener'),
               ),
             ],
           ),
