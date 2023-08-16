@@ -24,6 +24,7 @@ import 'package:learn_flutter_widget/draggable_scrollable_sheet.dart';
 import 'package:learn_flutter_widget/fitted_box_example.dart';
 import 'package:learn_flutter_widget/flow_example.dart';
 import 'package:learn_flutter_widget/fractionally_sizedbox_example.dart';
+import 'package:learn_flutter_widget/indexed_stack_example.dart';
 import 'package:learn_flutter_widget/physical_model.dart';
 import 'package:learn_flutter_widget/transform_example.dart';
 
@@ -338,6 +339,17 @@ class HomePage extends StatelessWidget {
                       );
                     },
                     child: const Text('Fractionally Sizedbox'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => IndexedStackExample(),
+                        ),
+                      );
+                    },
+                    child: const Text('Indexed Stack'),
                   ),
                 ],
               ),
