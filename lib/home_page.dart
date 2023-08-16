@@ -30,6 +30,7 @@ import 'package:learn_flutter_widget/limited_box_example.dart';
 import 'package:learn_flutter_widget/notification_scroll_listener_example.dart';
 import 'package:learn_flutter_widget/physical_model.dart';
 import 'package:learn_flutter_widget/sliver_appbar_example.dart';
+import 'package:learn_flutter_widget/sliver_grid_and_list_example.dart';
 import 'package:learn_flutter_widget/transform_example.dart';
 
 class HomePage extends StatelessWidget {
@@ -398,6 +399,17 @@ class HomePage extends StatelessWidget {
                   );
                 },
                 child: const Text('Sliver app bar'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => SliverGridAndListExample(),
+                    ),
+                  );
+                },
+                child: const Text('Sliver grid and list'),
               ),
             ],
           ),
