@@ -21,6 +21,7 @@ import 'package:learn_flutter_widget/data_table_example.dart';
 import 'package:learn_flutter_widget/decorateBox_transation_example.dart';
 import 'package:learn_flutter_widget/draggable_example.dart';
 import 'package:learn_flutter_widget/draggable_scrollable_sheet.dart';
+import 'package:learn_flutter_widget/fitted_box_example.dart';
 import 'package:learn_flutter_widget/physical_model.dart';
 
 class HomePage extends StatelessWidget {
@@ -290,6 +291,17 @@ class HomePage extends StatelessWidget {
                       );
                     },
                     child: const Text('DraggableScrollableSheet'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => FittedBoxExample(),
+                        ),
+                      );
+                    },
+                    child: const Text('Fitted box'),
                   ),
                 ],
               ),
