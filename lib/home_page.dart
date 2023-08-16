@@ -19,6 +19,7 @@ import 'package:learn_flutter_widget/cupertino_segmented_control_example.dart';
 import 'package:learn_flutter_widget/cupertino_sliver_navigation_bar_example.dart';
 import 'package:learn_flutter_widget/data_table_example.dart';
 import 'package:learn_flutter_widget/decorateBox_transation_example.dart';
+import 'package:learn_flutter_widget/draggable_example.dart';
 import 'package:learn_flutter_widget/physical_model.dart';
 
 class HomePage extends StatelessWidget {
@@ -266,6 +267,17 @@ class HomePage extends StatelessWidget {
                       );
                     },
                     child: const Text('Decorated box transition'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => DraggableExample(),
+                        ),
+                      );
+                    },
+                    child: const Text('Draggable'),
                   ),
                 ],
               ),
