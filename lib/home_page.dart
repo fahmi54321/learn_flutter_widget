@@ -26,6 +26,7 @@ import 'package:learn_flutter_widget/flow_example.dart';
 import 'package:learn_flutter_widget/fractionally_sizedbox_example.dart';
 import 'package:learn_flutter_widget/indexed_stack_example.dart';
 import 'package:learn_flutter_widget/intrinsic_height_width_example.dart';
+import 'package:learn_flutter_widget/limited_box_example.dart';
 import 'package:learn_flutter_widget/physical_model.dart';
 import 'package:learn_flutter_widget/transform_example.dart';
 
@@ -362,6 +363,17 @@ class HomePage extends StatelessWidget {
                   );
                 },
                 child: const Text('Intrinsic Height Width'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => LimitedBoxExample(),
+                    ),
+                  );
+                },
+                child: const Text('Limited Box'),
               ),
             ],
           ),
