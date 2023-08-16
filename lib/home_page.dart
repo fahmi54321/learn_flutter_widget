@@ -25,6 +25,7 @@ import 'package:learn_flutter_widget/fitted_box_example.dart';
 import 'package:learn_flutter_widget/flow_example.dart';
 import 'package:learn_flutter_widget/fractionally_sizedbox_example.dart';
 import 'package:learn_flutter_widget/indexed_stack_example.dart';
+import 'package:learn_flutter_widget/intrinsic_height_width_example.dart';
 import 'package:learn_flutter_widget/physical_model.dart';
 import 'package:learn_flutter_widget/transform_example.dart';
 
@@ -35,325 +36,334 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => AbsorbPointerExample(),
-                        ),
-                      );
-                    },
-                    child: const Text('Absorb pointer'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => AnimatedAlignExample(),
-                        ),
-                      );
-                    },
-                    child: const Text('Animated align'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => AnimatedBuilderExample(),
-                        ),
-                      );
-                    },
-                    child: const Text('Animated builder'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => AnimatedContainerExample(),
-                        ),
-                      );
-                    },
-                    child: const Text('Animated container'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => AnimatedCrossFadeExample(),
-                        ),
-                      );
-                    },
-                    child: const Text('Animated cross fade'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => DefaultTextStyleTransitionExample(),
-                        ),
-                      );
-                    },
-                    child: const Text('Animated text'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => AnimatedListSample(),
-                        ),
-                      );
-                    },
-                    child: const Text('Animated list'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => LogoFade(),
-                        ),
-                      );
-                    },
-                    child: const Text('Animated opacity'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => PhysicalModelExample(),
-                        ),
-                      );
-                    },
-                    child: const Text('Physical Model'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => AnimatedPositionedExample(),
-                        ),
-                      );
-                    },
-                    child: const Text('Animated Posiotioned'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => AnimatedSizeExample(),
-                        ),
-                      );
-                    },
-                    child: const Text('Animated Size'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => AnimatedWidgetExample(),
-                        ),
-                      );
-                    },
-                    child: const Text('Animated Widget'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => AppBarExample(),
-                        ),
-                      );
-                    },
-                    child: const Text('Appbar'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => AspectRatioExample(),
-                        ),
-                      );
-                    },
-                    child: const Text('Aspect ratio'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => AutocompleteBasicExample(),
-                        ),
-                      );
-                    },
-                    child: const Text('Autocomplete'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => BackdropfilterExample(),
-                        ),
-                      );
-                    },
-                    child: const Text('Backdropfilter'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => CupertinoPickerExample(),
-                        ),
-                      );
-                    },
-                    child: const Text('Cupertino picker'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => SegmentedControlExample(),
-                        ),
-                      );
-                    },
-                    child: const Text('Cupertino segmented control'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => SliverNavBarExample(),
-                        ),
-                      );
-                    },
-                    child: const Text('Cupertino sliver navigation bar'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => DataTableExample(),
-                        ),
-                      );
-                    },
-                    child: const Text('Data table'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => DecoratedBoxTransitionExample(),
-                        ),
-                      );
-                    },
-                    child: const Text('Decorated box transition'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => DraggableExample(),
-                        ),
-                      );
-                    },
-                    child: const Text('Draggable'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => DraggableScrollableSheetExample(),
-                        ),
-                      );
-                    },
-                    child: const Text('DraggableScrollableSheet'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => FittedBoxExample(),
-                        ),
-                      );
-                    },
-                    child: const Text('Fitted box'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => FlowExample(),
-                        ),
-                      );
-                    },
-                    child: const Text('Flow'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => TransformExample(),
-                        ),
-                      );
-                    },
-                    child: const Text('Transform'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => FractionallySizedBoxExample(),
-                        ),
-                      );
-                    },
-                    child: const Text('Fractionally Sizedbox'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => IndexedStackExample(),
-                        ),
-                      );
-                    },
-                    child: const Text('Indexed Stack'),
-                  ),
-                ],
+        body: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: GridView.count(
+            mainAxisSpacing: 20.0,
+            crossAxisSpacing: 4.0,
+            childAspectRatio: 16 / 4,
+            crossAxisCount: 2,
+            children: [
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => AbsorbPointerExample(),
+                    ),
+                  );
+                },
+                child: const Text('Absorb pointer'),
               ),
-            ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => AnimatedAlignExample(),
+                    ),
+                  );
+                },
+                child: const Text('Animated align'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => AnimatedBuilderExample(),
+                    ),
+                  );
+                },
+                child: const Text('Animated builder'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => AnimatedContainerExample(),
+                    ),
+                  );
+                },
+                child: const Text('Animated container'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => AnimatedCrossFadeExample(),
+                    ),
+                  );
+                },
+                child: const Text('Animated cross fade'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => DefaultTextStyleTransitionExample(),
+                    ),
+                  );
+                },
+                child: const Text('Animated text'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => AnimatedListSample(),
+                    ),
+                  );
+                },
+                child: const Text('Animated list'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => LogoFade(),
+                    ),
+                  );
+                },
+                child: const Text('Animated opacity'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => PhysicalModelExample(),
+                    ),
+                  );
+                },
+                child: const Text('Physical Model'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => AnimatedPositionedExample(),
+                    ),
+                  );
+                },
+                child: const Text('Animated Posiotioned'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => AnimatedSizeExample(),
+                    ),
+                  );
+                },
+                child: const Text('Animated Size'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => AnimatedWidgetExample(),
+                    ),
+                  );
+                },
+                child: const Text('Animated Widget'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => AppBarExample(),
+                    ),
+                  );
+                },
+                child: const Text('Appbar'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => AspectRatioExample(),
+                    ),
+                  );
+                },
+                child: const Text('Aspect ratio'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => AutocompleteBasicExample(),
+                    ),
+                  );
+                },
+                child: const Text('Autocomplete'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => BackdropfilterExample(),
+                    ),
+                  );
+                },
+                child: const Text('Backdropfilter'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => CupertinoPickerExample(),
+                    ),
+                  );
+                },
+                child: const Text('Cupertino picker'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => SegmentedControlExample(),
+                    ),
+                  );
+                },
+                child: const Text('Cupertino segmented control'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => SliverNavBarExample(),
+                    ),
+                  );
+                },
+                child: const Text('Cupertino sliver navigation bar'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => DataTableExample(),
+                    ),
+                  );
+                },
+                child: const Text('Data table'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => DecoratedBoxTransitionExample(),
+                    ),
+                  );
+                },
+                child: const Text('Decorated box transition'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => DraggableExample(),
+                    ),
+                  );
+                },
+                child: const Text('Draggable'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => DraggableScrollableSheetExample(),
+                    ),
+                  );
+                },
+                child: const Text('DraggableScrollableSheet'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => FittedBoxExample(),
+                    ),
+                  );
+                },
+                child: const Text('Fitted box'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => FlowExample(),
+                    ),
+                  );
+                },
+                child: const Text('Flow'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => TransformExample(),
+                    ),
+                  );
+                },
+                child: const Text('Transform'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => FractionallySizedBoxExample(),
+                    ),
+                  );
+                },
+                child: const Text('Fractionally Sizedbox'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => IndexedStackExample(),
+                    ),
+                  );
+                },
+                child: const Text('Indexed Stack'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => IntrinsicHeightWidthExample(),
+                    ),
+                  );
+                },
+                child: const Text('Intrinsic Height Width'),
+              ),
+            ],
           ),
         ),
       ),
