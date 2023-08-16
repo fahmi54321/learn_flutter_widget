@@ -31,6 +31,7 @@ import 'package:learn_flutter_widget/notification_scroll_listener_example.dart';
 import 'package:learn_flutter_widget/physical_model.dart';
 import 'package:learn_flutter_widget/sliver_appbar_example.dart';
 import 'package:learn_flutter_widget/sliver_grid_and_list_example.dart';
+import 'package:learn_flutter_widget/tab_page_selector_example.dart';
 import 'package:learn_flutter_widget/transform_example.dart';
 
 class HomePage extends StatelessWidget {
@@ -410,6 +411,17 @@ class HomePage extends StatelessWidget {
                   );
                 },
                 child: const Text('Sliver grid and list'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => TabPageSelectorExample(),
+                    ),
+                  );
+                },
+                child: const Text('Tab page selector'),
               ),
             ],
           ),
