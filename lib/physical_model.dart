@@ -8,15 +8,14 @@ class PhysicalModelExample extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: PhysicalModel(
-          color: Colors.black, // todo 1
+          color: Colors.transparent, // todo 1
           elevation: 30.0, // todo 2
           shadowColor: Colors.red, // todo 3
           // shape: BoxShape.circle, // todo 4
           borderRadius: BorderRadius.circular(2.0),
-          child: Container(
-            width: 200.0,
-            height: 200.0,
-            color: Colors.blue,
+          child: ElevatedButton(
+            onPressed: () {},
+            child: Text('Physical Model'),
           ),
         ),
       ),

@@ -1,38 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter_widget/absorb_pointer.dart';
-import 'package:learn_flutter_widget/animated_align.dart';
-import 'package:learn_flutter_widget/animated_builder.dart';
-import 'package:learn_flutter_widget/animated_container.dart';
-import 'package:learn_flutter_widget/animated_cross_fade.dart';
-import 'package:learn_flutter_widget/animated_list.dart';
-import 'package:learn_flutter_widget/animated_opacity.dart';
-import 'package:learn_flutter_widget/animated_positioned_example.dart';
-import 'package:learn_flutter_widget/animated_size_example.dart';
-import 'package:learn_flutter_widget/animated_text.dart';
-import 'package:learn_flutter_widget/animated_widget_example.dart';
 import 'package:learn_flutter_widget/app_bar_example.dart';
 import 'package:learn_flutter_widget/aspect_ratio_example.dart';
-import 'package:learn_flutter_widget/autocomplete_example.dart';
-import 'package:learn_flutter_widget/backdropfilter_example.dart';
 import 'package:learn_flutter_widget/cupertino_picker_example.dart';
 import 'package:learn_flutter_widget/cupertino_segmented_control_example.dart';
 import 'package:learn_flutter_widget/cupertino_sliver_navigation_bar_example.dart';
 import 'package:learn_flutter_widget/data_table_example.dart';
 import 'package:learn_flutter_widget/decorateBox_transation_example.dart';
-import 'package:learn_flutter_widget/draggable_example.dart';
 import 'package:learn_flutter_widget/draggable_scrollable_sheet.dart';
 import 'package:learn_flutter_widget/fitted_box_example.dart';
 import 'package:learn_flutter_widget/flow_example.dart';
 import 'package:learn_flutter_widget/fractionally_sizedbox_example.dart';
-import 'package:learn_flutter_widget/indexed_stack_example.dart';
 import 'package:learn_flutter_widget/intrinsic_height_width_example.dart';
 import 'package:learn_flutter_widget/limited_box_example.dart';
 import 'package:learn_flutter_widget/notification_scroll_listener_example.dart';
-import 'package:learn_flutter_widget/physical_model.dart';
 import 'package:learn_flutter_widget/sliver_appbar_example.dart';
 import 'package:learn_flutter_widget/sliver_grid_and_list_example.dart';
 import 'package:learn_flutter_widget/tab_page_selector_example.dart';
-import 'package:learn_flutter_widget/transform_example.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -54,139 +37,7 @@ class HomePage extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (_) => AbsorbPointerExample(),
-                    ),
-                  );
-                },
-                child: const Text('Absorb pointer'),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (_) => AnimatedAlignExample(),
-                    ),
-                  );
-                },
-                child: const Text('Animated align'),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (_) => AnimatedBuilderExample(),
-                    ),
-                  );
-                },
-                child: const Text('Animated builder'),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (_) => AnimatedContainerExample(),
-                    ),
-                  );
-                },
-                child: const Text('Animated container'),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (_) => AnimatedCrossFadeExample(),
-                    ),
-                  );
-                },
-                child: const Text('Animated cross fade'),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (_) => DefaultTextStyleTransitionExample(),
-                    ),
-                  );
-                },
-                child: const Text('Animated text'),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (_) => AnimatedListSample(),
-                    ),
-                  );
-                },
-                child: const Text('Animated list'),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (_) => LogoFade(),
-                    ),
-                  );
-                },
-                child: const Text('Animated opacity'),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (_) => PhysicalModelExample(),
-                    ),
-                  );
-                },
-                child: const Text('Physical Model'),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (_) => AnimatedPositionedExample(),
-                    ),
-                  );
-                },
-                child: const Text('Animated Posiotioned'),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (_) => AnimatedSizeExample(),
-                    ),
-                  );
-                },
-                child: const Text('Animated Size'),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (_) => AnimatedWidgetExample(),
-                    ),
-                  );
-                },
-                child: const Text('Animated Widget'),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (_) => AppBarExample(),
+                      builder: (_) => const AppBarExample(),
                     ),
                   );
                 },
@@ -197,7 +48,7 @@ class HomePage extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (_) => AspectRatioExample(),
+                      builder: (_) => const AspectRatioExample(),
                     ),
                   );
                 },
@@ -208,29 +59,7 @@ class HomePage extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (_) => AutocompleteBasicExample(),
-                    ),
-                  );
-                },
-                child: const Text('Autocomplete'),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (_) => BackdropfilterExample(),
-                    ),
-                  );
-                },
-                child: const Text('Backdropfilter'),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (_) => CupertinoPickerExample(),
+                      builder: (_) => const CupertinoPickerExample(),
                     ),
                   );
                 },
@@ -241,7 +70,7 @@ class HomePage extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (_) => SegmentedControlExample(),
+                      builder: (_) => const SegmentedControlExample(),
                     ),
                   );
                 },
@@ -252,7 +81,7 @@ class HomePage extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (_) => SliverNavBarExample(),
+                      builder: (_) => const SliverNavBarExample(),
                     ),
                   );
                 },
@@ -263,7 +92,7 @@ class HomePage extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (_) => DataTableExample(),
+                      builder: (_) => const DataTableExample(),
                     ),
                   );
                 },
@@ -274,29 +103,18 @@ class HomePage extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (_) => DecoratedBoxTransitionExample(),
+                      builder: (_) => const DecoratedBoxTransitionExample(),
                     ),
                   );
                 },
-                child: const Text('Decorated box transition'),
+                child: const Text('Decorated box'),
               ),
               ElevatedButton(
                 onPressed: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (_) => DraggableExample(),
-                    ),
-                  );
-                },
-                child: const Text('Draggable'),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (_) => DraggableScrollableSheetExample(),
+                      builder: (_) => const DraggableScrollableSheetExample(),
                     ),
                   );
                 },
@@ -307,7 +125,7 @@ class HomePage extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (_) => FittedBoxExample(),
+                      builder: (_) => const FittedBoxExample(),
                     ),
                   );
                 },
@@ -318,7 +136,7 @@ class HomePage extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (_) => FlowExample(),
+                      builder: (_) => const FlowExample(),
                     ),
                   );
                 },
@@ -329,18 +147,7 @@ class HomePage extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (_) => TransformExample(),
-                    ),
-                  );
-                },
-                child: const Text('Transform'),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (_) => FractionallySizedBoxExample(),
+                      builder: (_) => const FractionallySizedBoxExample(),
                     ),
                   );
                 },
@@ -351,18 +158,7 @@ class HomePage extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (_) => IndexedStackExample(),
-                    ),
-                  );
-                },
-                child: const Text('Indexed Stack'),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (_) => IntrinsicHeightWidthExample(),
+                      builder: (_) => const IntrinsicHeightWidthExample(),
                     ),
                   );
                 },
@@ -373,7 +169,7 @@ class HomePage extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (_) => LimitedBoxExample(),
+                      builder: (_) => const LimitedBoxExample(),
                     ),
                   );
                 },
@@ -384,7 +180,7 @@ class HomePage extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (_) => NotificationScrollListenerExample(),
+                      builder: (_) => const NotificationScrollListenerExample(),
                     ),
                   );
                 },
@@ -395,7 +191,7 @@ class HomePage extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (_) => SliverAppBarExample(),
+                      builder: (_) => const SliverAppBarExample(),
                     ),
                   );
                 },
@@ -406,7 +202,7 @@ class HomePage extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (_) => SliverGridAndListExample(),
+                      builder: (_) => const SliverGridAndListExample(),
                     ),
                   );
                 },
@@ -417,7 +213,7 @@ class HomePage extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (_) => TabPageSelectorExample(),
+                      builder: (_) => const TabPageSelectorExample(),
                     ),
                   );
                 },

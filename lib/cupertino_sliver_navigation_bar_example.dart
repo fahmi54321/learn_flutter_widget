@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class SliverNavBarExample extends StatelessWidget {
   const SliverNavBarExample({super.key});
@@ -21,24 +22,31 @@ class SliverNavBarExample extends StatelessWidget {
           // This widget fills the remaining space in the viewport.
           // Drag the scrollable area to collapse the CupertinoSliverNavigationBar.
           SliverFillRemaining(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[
-                const Text('Drag me up', textAlign: TextAlign.center),
-                CupertinoButton.filled(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      CupertinoPageRoute<Widget>(
-                        builder: (BuildContext context) {
-                          return const NextPage();
+            child: Scaffold(
+              body: Center(
+                child: SingleChildScrollView(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      const Text('Drag me up', textAlign: TextAlign.center),
+                      CupertinoButton.filled(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            CupertinoPageRoute<Widget>(
+                              builder: (BuildContext context) {
+                                return const NextPage();
+                              },
+                            ),
+                          );
                         },
+                        child: const Text('Go to Next Page'),
                       ),
-                    );
-                  },
-                  child: const Text('Go to Next Page'),
+                    ],
+                  ),
                 ),
-              ],
+              ),
             ),
           ),
         ],
@@ -72,15 +80,21 @@ class NextPage extends StatelessWidget {
             largeTitle: const Text('Family'),
           ),
           const SliverFillRemaining(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[
-                Text('Drag me up', textAlign: TextAlign.center),
-                // When the "leading" parameter is omitted on a route that has a previous page,
-                // the back button is automatically added to the leading position.
-                Text('Tap on the leading button to navigate back',
-                    textAlign: TextAlign.center),
-              ],
+            child: Scaffold(
+              body: Center(
+                child: SingleChildScrollView(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      Text('Drag me up', textAlign: TextAlign.center),
+                      // When the "leading" parameter is omitted on a route that has a previous page,
+                      // the back button is automatically added to the leading position.
+                      Text('Tap on the leading button to navigate back',
+                          textAlign: TextAlign.center),
+                    ],
+                  ),
+                ),
+              ),
             ),
           ),
         ],

@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 enum Sky { midnight, viridian, cerulean }
 
@@ -53,10 +54,14 @@ class _SegmentedControlExampleState extends State<SegmentedControlExample> {
           },
         ),
       ),
-      child: Center(
-        child: Text(
-          'Selected Segment: ${_selectedSegment.name}',
-          style: const TextStyle(color: CupertinoColors.white),
+      child: Scaffold(
+        body: Center(
+          child: Text(
+            'Selected Segment: ${_selectedSegment.name}',
+            style: const TextStyle(
+              color: CupertinoColors.black,
+            ),
+          ),
         ),
       ),
     );

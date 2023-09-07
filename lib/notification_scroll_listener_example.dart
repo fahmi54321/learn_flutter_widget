@@ -11,6 +11,7 @@ class NotificationScrollListenerExample extends StatefulWidget {
 class _NotificationScrollListenerExampleState
     extends State<NotificationScrollListenerExample> {
   String message = 'New';
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(

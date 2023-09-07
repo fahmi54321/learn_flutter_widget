@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter_widget/appbar/appbar_1.dart';
 import 'package:learn_flutter_widget/appbar/appbar_2.dart';
 
 class AppBarExample extends StatelessWidget {
@@ -19,22 +18,11 @@ class AppBarExample extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (_) => AppBarExample1(),
-                    ),
-                  );
-                },
-                child: const Text('Appbar 1'),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
                       builder: (_) => AppBarExample2(),
                     ),
                   );
                 },
-                child: const Text('Appbar 2'),
+                child: const Text('Bottom Appbar'),
               ),
             ],
           ),
